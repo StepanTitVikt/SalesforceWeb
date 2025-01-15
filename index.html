@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Web Form</h1>
+    
+    <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Ddt000000oQ5n" method="POST">
+    
+    <input type=hidden name="oid" value="00Ddt000000oQ5n">
+    <input type=hidden name="retURL" value="http://">
+    <input type=hidden name="lead_source" id="lead_source" value="Website" type="text">
+    <input type=hidden name="company" id="company" value="Default" type="text">
+    <!-- <input type=hidden name="Region__c" id="Region__c" value="001dt000004hLA9AAM">   -->
+
+    <label for="first_name">First Name</label><input required id="first_name" name="first_name" size="20" type="text" />
+    
+    <label for="last_name">Last Name</label><input  required id="last_name" name="last_name" size="20" type="text" />
+    
+    <!-- <label for="email">Email</label><input required id="email" name="email" size="20" type="text" />
+    
+    <label for="mobile">Mobile</label><input  required id="mobile" name="mobile" size="20" type="text" />
+     -->
+    <!-- Region:<input  id="00Ndt000000NnKz" name="00Ndt000000NnKz" size="20" type="text" /> -->
+    
+    <!-- <label for="region">Region</label><input list="regions" name="00Ndt000000NnKz" id="00Ndt000000NnKz" > -->
+    <!-- <label for="region">Region</label><input list="regions" name="Region__c" id="Region__c" >
+    <datalist id="regions">
+        <option value="Eastern Cape">
+        <option value="Free State & Northern Cape">
+        <option value="Greater Pretoria">
+        <option value="Johannesburg & North West">
+        <option value="Johannesburg & South East">
+        <option value="KwaZulu Natal">
+        <option value="Western Cape">
+    </datalist>  -->
+
+    <label for="Region__c">Region1</label>
+    <select required id="Region__c" name="Region__c">
+        <option value="001dt000004hLA9AAM">Eastern Cape</option>
+        <option value="001dt000004hLABAA2">Greater Pretoria</option>
+    </select>
+
+    <input type="submit" name="submit">
+    
+    </form>
+    
+</body>
+</html>
