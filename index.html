@@ -6,12 +6,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+    </script>
 </head>
 <body>
     <h1>Web Form</h1>
     
     <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Ddt000000oQ5n" method="POST">
     
+    <input type=hidden name='captcha_settings' value='{"keyname":"GitHub","fallback":"true","orgId":"00Ddt000000oQ5n","ts":""}'>
     <input type=hidden name="oid" value="00Ddt000000oQ5n">
     <input type=hidden name="retURL" value="https://stepantitvikt.github.io/SalesforceWeb/thankyou.html">
     <input type=hidden name="lead_source" id="lead_source" value="Website" type="text">
@@ -46,6 +51,7 @@
         <option value="001dt000004hLABAA2">Greater Pretoria</option>
     </select>
 
+    <div class="g-recaptcha" data-sitekey="6LdT2bgqAAAAAG45Yco-wIXslLwPLCXS0mJ0wnAf"></div><br>
     <input type="submit" name="submit">
     
     </form>
