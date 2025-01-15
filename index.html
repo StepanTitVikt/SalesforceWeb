@@ -14,7 +14,7 @@
 <body>
     <h1>Web Form</h1>
     
-    <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Ddt000000oQ5n" method="POST">
+    <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Ddt000000oQ5n" onsubmit="beforeSubmit(event)" method="POST">
     
     <input type=hidden name='captcha_settings' value='{"keyname":"GitHub","fallback":"true","orgId":"00Ddt000000oQ5n","ts":""}'>
     <input type=hidden name="oid" value="00Ddt000000oQ5n">
@@ -51,7 +51,7 @@
         <option value="001dt000004hLABAA2">Greater Pretoria</option>
     </select>
 
-    <div class="g-recaptcha" data-sitekey="6LdT2bgqAAAAAG45Yco-wIXslLwPLCXS0mJ0wnAf"></div><br>
+    <div class="g-recaptcha" data-callback="captchaSuccess" data-sitekey="6LdT2bgqAAAAAG45Yco-wIXslLwPLCXS0mJ0wnAf"></div><br>
     <input type="submit" name="submit">
     
     </form>
