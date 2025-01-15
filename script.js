@@ -1,7 +1,7 @@
 let captchaChecked = false;
 
 function captchaSuccess(){
-    captcha
+    captchaChecked = true;
 }
 
 function beforeSubmit(event) {
