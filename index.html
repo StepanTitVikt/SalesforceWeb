@@ -27,9 +27,7 @@
         }
         
         function beforeSubmit(event) {
-            if(captchaChecked){
-        
-            }else{
+            if(!captchaChecked){
                 alert('Please check the reCAPTCHA box.');
                 event.preventDefault();
             }
