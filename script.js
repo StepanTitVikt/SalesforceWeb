@@ -1,14 +1,14 @@
-let captchaChecked = false;
+// let captchaChecked = false;
 
-function captchaSuccess(){
-    captchaChecked = true;
-}
+// function captchaSuccess(){
+//     captchaChecked = true;
+// }
 
-function beforeSubmit(event) {
-    if(captchaChecked){
+// function beforeSubmit(event) {
+//     if(captchaChecked){
 
-    }else{
-        alert('Please check the reCAPTCHA box.');
-        event.preventDefault();
-    }
-}
+//     }else{
+//         alert('Please check the reCAPTCHA box.');
+//         event.preventDefault();
+//     }
+// }
