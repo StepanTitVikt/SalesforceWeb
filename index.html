@@ -27,9 +27,7 @@
         }
         
         function beforeSubmit(event) {
-            if(captchaChecked){
-        
-            }else{
+            if(!captchaChecked){
                 alert('Please check the reCAPTCHA box.');
                 event.preventDefault();
             }
@@ -73,8 +71,8 @@
             <option value="Western Cape">
         </datalist>  -->
 
-        <label for="Region__c">Region *</label>
-        <select required id="Region__c" name="Region__c">
+        <label for="Region_from_Web__c">Region *</label>
+        <select required id="Region_from_Web__c" name="Region_from_Web__c">
             <!-- <option value="001dt000004hLA9AAM">Eastern Cape</option>
             <option value="001dt000004hLABAA2">Greater Pretoria</option> -->
                 <option value="Eastern Cape"> Eastern Cape </option>
