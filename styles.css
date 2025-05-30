@@ -12,7 +12,7 @@ h2{
     text-align: left;
 }
 
-label, input, select{
+label, input, select, textarea{
     display: block;
 }
 
@@ -20,7 +20,7 @@ label{
     margin-top: 10px;
 }
 
-input, select{
+input, select,textarea{
     width: 100%;
 }
 
